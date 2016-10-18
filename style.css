@@ -1,0 +1,11 @@
+*{
+font-family: 'Source Sans Pro', sans-serif;
+font-size:18px; 
+}
+
+h1{
+	align-content: center;
+	z-index: 13; 
+	overflow: none; 
+	
+}
