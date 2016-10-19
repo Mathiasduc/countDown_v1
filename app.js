@@ -1,3 +1,4 @@
+
 "use strict";
 
 	var timer =  180;
@@ -21,18 +22,18 @@
 		var secondes= $('.setSecondes').val();
 		timer= parseInt(minutes*60 + secondes); 
 	});
-
-	$('.btnStart').click(function(){
-		interval = setInterval(callback, 1000);
+						//utilise des ID quand tu selectionne un elem unique laisse les classes pour le css ou pour les selections multiples
+	$('.btnStart').click(function(){                //que ca passe t il si un user appuie plusieur fois sur start sans mettre pause ?
+		interval = setInterval(callback, 1000);	
 	});
 
-	$('.btnClear').click(function(){
+	$('.btnClear').click(function(){	//pk clear? plutot input user ou un truc du genre ?
 		clearInterval(interval);
 
 		var minutes = $('.setMinutes').val();
 		var secondes= $('.setSecondes').val();
-		var timers= parseInt(minutes + secondes);
-		$('#putTime').val(minutes + ':' + secondes);
+		var timers= parseInt(minutes + secondes);//a quoi sert cet variable locale ? pk un nom aussi pour que ta variable globale?
+		$('#putTime').val(minutes + ':' + secondes); //je ne crois pas que c est que ca va faire ce que tu voulais que ca fasse? .val?
 	}); 
 
 	$('.btnStop').click(function(){
