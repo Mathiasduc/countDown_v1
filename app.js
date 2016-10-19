@@ -32,7 +32,7 @@
 		var minutes = $('.setMinutes').val();
 		var secondes= $('.setSecondes').val();
 		var timers= parseInt(minutes + secondes);//a quoi sert cet variable locale ? pk un nom aussi pour que ta variable globale?
-		$('#putTime').val(minutes + ':' + secondes); // je crois pas que c est que ca va faire ce que tu voulais que ca fasse? .val?
+		$('#putTime').val(minutes + ':' + secondes); //je ne crois pas que c est que ca va faire ce que tu voulais que ca fasse? .val?
 	}); 
 
 	$('.btnStop').click(function(){
